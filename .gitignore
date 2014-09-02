@@ -1,0 +1,5 @@
+vendor
+composer.lock
+config/config.php
+.idea
+data/hydrator/*.php

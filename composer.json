@@ -1,0 +1,36 @@
+{
+
+    "license": "MIT",
+    "keywords": ["doctrine", "silex", "php", "skel", "mongodb", "odm"],
+    "authors": [
+        {
+            "name": "Carlos André Ferrari",
+            "email": "caferrari@gmail.com",
+            "homepage": "https://ferrari.eti.br"
+        }
+    ],
+    "require": {
+        "twig/twig": "1.16.*@dev",
+        "silex/silex": "2.0.x-dev",
+        "doctrine/mongodb-odm": "1.0.*@dev",
+        "symfony/form": "~2.5",
+        "symfony/validator": "~2.5",
+        "symfony/config": "~2.5",
+        "symfony/translation": "~2.5",
+        "symfony/security-csrf": "~2.5",
+        "symfony/twig-bridge": "~2.5"
+    },
+    "autoload": {
+        "psr-0": {
+            "Site": "src\/",
+            "Common": "src\/",
+            "Admin": "src\/",
+            "Application": "src\/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    }
+}
