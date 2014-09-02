@@ -4,8 +4,6 @@ require_once 'bootstrap.php';
 
 use Doctrine\ORM\Tools\Setup;
 use Doctrine\Common\Annotations\AnnotationRegistry;
-use Symfony\Component\Console\Helper\DebugFormatterHelper;
-use Symfony\Component\Console\Helper\ProcessHelper;
 use Symfony\Component\Console\Helper\QuestionHelper;
 use Symfony\Component\Console\Helper\HelperSet;
 use Symfony\Component\Console\Helper\FormatterHelper;
@@ -20,7 +18,5 @@ return $helperSet = new \Symfony\Component\Console\Helper\HelperSet(array(
     new DialogHelper(),
     new ProgressHelper(),
     new TableHelper(),
-    new DebugFormatterHelper(),
-    new ProcessHelper(),
     new QuestionHelper()
 ));
