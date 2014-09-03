@@ -31,11 +31,21 @@ $app->before(function(Request $request) use ($app) {
 
 // Define o path da view dependendo da URL
 $app->before(function(Request $request) use ($app) {
-    $path = __DIR__.'/view/site';
+    $app->register(
+        new Silex\Provider\TwigServiceProvider(),  
+        [
+            'twig.path' => __DIR__.'/view',
+            'twig.options' => isset($app['config']['twig']) ? 
+                                    $app['config']['twig'] : []
+        ]
+    );
+    
     if ($app['is_admin_url']) {
-        $path = __DIR__.'/view/admin';
+        $app['twig.loader.filesystem']->addPath(__DIR__.'/view/admin');
+        return;
     }
-    $app->register(new Silex\Provider\TwigServiceProvider(), ['twig.path' => $path]);
+    
+    $app['twig.loader.filesystem']->addPath(__DIR__.'/view/site');
 });
 
 // Set the site name from the config

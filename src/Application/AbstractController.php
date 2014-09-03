@@ -1,6 +1,6 @@
 <?php
 
-namespace Common;
+namespace Application;
 
 use Psr\Log\InvalidArgumentException;
 use Silex\Application;
@@ -9,7 +9,7 @@ use Silex\ControllerCollection;
 
 /**
  * Class AbstractController
- * @package Common
+ * @package Application
  */
 abstract class AbstractController implements ControllerProviderInterface
 {
@@ -84,7 +84,7 @@ abstract class AbstractController implements ControllerProviderInterface
     /**
      * @param $class
      * @param null $entity
-     * @return Common\AbstractForm
+     * @return Application\AbstractForm
      */
     public function getForm($class, $entity = null)
     {

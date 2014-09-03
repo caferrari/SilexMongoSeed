@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\Request;
 
 use Application\Document\User;
 
-use Common\AbstractController;
+use Application\AbstractController;
 
 class DashboardController extends AbstractController
 {

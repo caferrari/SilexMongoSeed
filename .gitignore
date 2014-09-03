@@ -2,4 +2,8 @@ vendor
 composer.lock
 config/config.php
 .idea
-data/hydrator/*.php
+var/cache/hydrator/*.php
+var/cache/proxy/*.php
+var/cache/twig/*/
+
+!.gitkeep

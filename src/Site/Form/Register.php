@@ -5,7 +5,7 @@ namespace Site\Form;
 use Symfony\Component\Validator\Constraints as Assert;
 
 use Application\Document\User;
-use Common\AbstractForm;
+use Application\AbstractForm;
 
 class Register extends AbstractForm
 {

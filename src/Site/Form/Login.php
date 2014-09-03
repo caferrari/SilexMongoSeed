@@ -4,7 +4,7 @@ namespace Site\Form;
 
 use Symfony\Component\Validator\Constraints as Assert;
 
-use Common\AbstractForm;
+use Application\AbstractForm;
 
 class Login extends AbstractForm
 {

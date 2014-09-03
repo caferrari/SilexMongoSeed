@@ -1,13 +1,13 @@
 <?php
 
-namespace Common;
+namespace Application;
 
 use Silex\Application;
 use Symfony\Component\HttpFoundation\Request;
 
 /**
  * Class AbstractForm
- * @package Common
+ * @package Application
  */
 abstract class AbstractForm
 {

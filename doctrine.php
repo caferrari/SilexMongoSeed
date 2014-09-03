@@ -6,8 +6,8 @@ require_once 'bootstrap.php';
 
 $connection = new \Doctrine\MongoDB\Connection();
 $doctrineConfig = new Doctrine\ODM\MongoDB\Configuration();
-$doctrineConfig->setProxyDir(__DIR__ . '/data/proxy');
-$doctrineConfig->setHydratorDir(__DIR__ . '/data/hydrator');
+$doctrineConfig->setProxyDir(__DIR__ . '/var/cache/proxy');
+$doctrineConfig->setHydratorDir(__DIR__ . '/var/cache/hydrator');
 $doctrineConfig->setProxyNamespace('Proxies');
 $doctrineConfig->setAutoGenerateProxyClasses(true);
 $doctrineConfig->setHydratorNamespace('Hydrators');

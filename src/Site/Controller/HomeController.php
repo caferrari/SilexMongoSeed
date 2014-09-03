@@ -7,7 +7,7 @@ use Silex\ControllerCollection;
 use Symfony\Component\HttpFoundation\Request;
 
 use Application\Document\User;
-use Common\AbstractController;
+use Application\AbstractController;
 
 class HomeController extends AbstractController
 {

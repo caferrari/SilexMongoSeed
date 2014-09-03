@@ -1,5 +1,5 @@
 {
-
+	"minimum-stability": "dev",
     "license": "MIT",
     "keywords": ["doctrine", "silex", "php", "skel", "mongodb", "odm"],
     "authors": [
